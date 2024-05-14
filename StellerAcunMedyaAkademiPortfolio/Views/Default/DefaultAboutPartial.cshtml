@@ -1,0 +1,22 @@
+﻿@model List<StellerAcunMedyaAkademiPortfolio.Models.TblAbout>
+
+@foreach (var item in Model)
+{
+
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="@item.ImageUrl" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">@item.NameSurname</h6>
+                    <p class="subtitle">@item.Title</p>
+                    <p>@item.Description</p>
+                    <a class="btn btn-primary rounded mt-3" href="#contact">İletişime Geç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+

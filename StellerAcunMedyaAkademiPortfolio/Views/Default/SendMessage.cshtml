@@ -1,0 +1,18 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblMessage
+
+<div class="form">
+    <h6 class="subtitle">İstediğiniz zaman bana mesaj gönderebilirsiniz.</h6>
+    <h6 class="section-title mb-4">İletişime Geçin</h6>
+    <form method="post" action="/Default/SendMessage">
+        <div class="form-group">
+            <input type="email" name="Email" class="form-control" placeholder="Email'inizi yazın" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="NameSurname" class="form-control" placeholder="Adınız Soyadınız" required>
+        </div>
+        <div class="form-group">
+            <textarea name="MessageContent" id="" cols="30" rows="5" class="form-control" placeholder="Mesajınızı buraya yazın..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Mesajı Gönder</button>
+    </form>
+</div>

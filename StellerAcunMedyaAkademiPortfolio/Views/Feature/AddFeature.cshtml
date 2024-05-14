@@ -1,0 +1,28 @@
+﻿﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblFeature
+@{
+    ViewBag.Title = "AddFeature";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Öne Çıkan Alanı Ekle</h2>
+
+<form method="post">
+    <label>Resim Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Ad Soyad</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <br />
+    <label>Unvan</label>
+    @Html.TextBoxFor(x => x.Job, new { @class = "form-control" })
+    <br />
+    <label>Cv Download Url</label>
+    @Html.TextBoxFor(x => x.CvDownloadUrl, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Kaydet</button>
+
+</form>

@@ -1,0 +1,24 @@
+﻿﻿@model List<StellerAcunMedyaAkademiPortfolio.Models.TblService>
+
+<section id="service" class="section">
+    <div class="container text-center">
+        <h6 class="subtitle">Hizmetlerim</h6>
+        <h6 class="section-title mb-4">Sizin için neler yapabilirim.</h6>
+        <p class="mb-5 pb-4">Sunduğum hizmetlere aşağıdan ulaşabilirsiniz.</p>
+
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="@item.ServiceIconUrl"></i>
+                            <h5>@item.ServiceName</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

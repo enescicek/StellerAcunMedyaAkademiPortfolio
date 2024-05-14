@@ -1,0 +1,23 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblAdmin
+
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container align-content-center">
+    <form method="post">
+
+        <label>Kullanıcı Adı</label>
+        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+        <br />
+        <label>Şifreniz</label>
+        <input type="password" name="Password" class="form-control" />
+        <br />
+        <p style="color:red">@Html.ValidationSummary()</p>
+
+        <button class="btn btn-primary">Giriş Yap</button>
+    </form>
+
+</div>

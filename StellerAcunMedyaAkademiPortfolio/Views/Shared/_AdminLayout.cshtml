@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+@Html.Partial("PartialHead")
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        @Html.Partial("PartialSidebar")
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+
+            @RenderBody()
+        </div>
+    </div>
+
+    @Html.Partial("PartialScript")
+</body>
+</html>
+
+

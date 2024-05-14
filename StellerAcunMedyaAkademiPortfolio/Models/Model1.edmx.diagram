@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b58fbe3f58704971938cc545092c65eb" Name="Diagram1">
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblTestimonial" Width="1.5" PointX="1" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblAbout" Width="1.5" PointX="2.875" PointY="0.5" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblContact" Width="1.5" PointX="6.375" PointY="0.5" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblMessage" Width="1.5" PointX="8.25" PointY="0.5" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblProject" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblService" Width="1.5" PointX="4.625" PointY="0.5" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblSkill" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblSocialMedia" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblFeature" Width="1.5" PointX="7" PointY="3.5" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblAdmin" Width="1.5" PointX="9.125" PointY="3.625" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
