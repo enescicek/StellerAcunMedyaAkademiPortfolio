@@ -1,0 +1,43 @@
+﻿@model List<StellerAcunMedyaAkademiPortfolio.Models.TblContact>
+
+
+@foreach (var item in Model)
+{
+    <div class="contact-infos">
+        <div class="item">
+            <i class="ti-location-pin"></i>
+            <div class="">
+                <h5>Adres</h5>
+                <p> @item.Address</p>
+            </div>
+        </div>
+        <div class="item">
+            <i class="ti-mobile"></i>
+            <div>
+                <h5>Telefon No</h5>
+                <p>@item.Phone</p>
+            </div>
+        </div>
+        <div class="item">
+            <i class="ti-email"></i>
+            <div class="mb-0">
+                <h5>Email</h5>
+                <p>@item.Email</p>
+            </div>
+        </div>
+    </div>
+
+}
+
+    </div>
+</div>
+
+@foreach (var item in Model)
+{
+
+
+    <div id="map">
+        <iframe src="@item.MapUrl"></iframe>
+    </div>
+
+}

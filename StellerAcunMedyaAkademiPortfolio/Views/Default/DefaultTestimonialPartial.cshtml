@@ -1,0 +1,42 @@
+﻿@model List<StellerAcunMedyaAkademiPortfolio.Models.TblTestimonial>
+
+@{ 
+    int count = 0;
+    var active = "";
+}
+<section id="testmonial" class="section">
+    <div class="container text-center">
+        <h6 class="subtitle">Referanslarım</h6>
+        <h6 class="section-title mb-4">Benim hakkımda söylenenler</h6>
+        <p class="mb-5 pb-4">Aşağıda hakkımda yapılan yorumları ve referanslarımı görebilirsiniz.</p>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                @foreach (var item in Model)
+                {
+                    count++;
+                    if (count == 1) { active = "active"; } else { active = ""; }
+
+                <div class="carousel-item @active">
+                    <div class="card testmonial-card border">
+                        <div class="card-body">
+                            <img src="@item.ImageUrl" alt="">
+                            <p>@item.Description</p>
+                            <h1 class="title">@item.NameSurname</h1>
+                            <h1 class="subtitle">@item.Title</h1>
+                        </div>
+                    </div>
+                </div>
+                }
+               
+            </div>
+        </div>
+    </div>
+</section>

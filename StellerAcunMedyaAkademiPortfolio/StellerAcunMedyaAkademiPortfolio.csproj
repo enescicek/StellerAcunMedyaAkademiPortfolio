@@ -520,6 +520,10 @@
     <Content Include="Views\Default\DefaultServicePartial.cshtml" />
     <Content Include="Views\Default\DefaultSkillPartial.cshtml" />
     <Content Include="Views\Default\DefaultProjectPartial.cshtml" />
+    <Content Include="Views\Default\DefaultTestimonialPartial.cshtml" />
+    <Content Include="Views\Default\DefaultContactInfoPartial.cshtml" />
+    <Content Include="Views\UILayout\UILayoutFooterPartial.cshtml" />
+    <Content Include="Views\Default\UILayoutFooterPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
